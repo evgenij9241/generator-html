@@ -54,6 +54,7 @@ export default function Field({field}) {
 export async function getStaticProps(context) {
     const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
     await delay(3000).then(() => console.log('waited 3 seconds'))
+
     console.log(context.params.id + '----------------------')
     const field = await getOneField(context.params.id)
     return {
