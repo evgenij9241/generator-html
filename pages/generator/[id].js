@@ -52,7 +52,7 @@ export default function Field({field}) {
 
 export async function getStaticProps(context) {
     const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
-    await delay(500).then(() => console.log('----------------------Delay for axios----------------------'))
+    await delay(2000).then(() => console.log('----------------------Delay for axios----------------------'))
     const field = await getOneField(context.params.id)
     return {
         props: {
