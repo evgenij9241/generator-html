@@ -48,38 +48,38 @@ export default function Generated() {
                         </style>
                     </head>
                     <body>
-                    <table style={{"width": "100%"}}>
+                    <table style="width:100%">
                     <tr>
-                        <td style={{"width": "25%"}}><strong><font color="red">Special Note</font></strong></td>
-                        <td style={{"width": "75%"}}>${item.fields["User Requirements"]}</td>
+                        <td style="width:25%"><strong><font color="red">Special Note</font></strong></td>
+                        <td style="width:75%">${item.fields["User Requirements"]}</td>
                     </tr>
                     <tr>
-                        <td style={{"width": "25%"}}><strong>Conversion Action</strong></td>
-                        <td style={{"width": "75%"}}>${item.fields["Conversion Action"]}</td>
+                        <td style="width:25%"><strong>Conversion Action</strong></td>
+                        <td style="width:75%">${item.fields["Conversion Action"]}</td>
                     </tr>
                     <tr>
-                        <td style={{"width": "25%"}}><strong>Simple Description</strong></td>
-                        <td style={{"width": "75%"}}>${item.fields["User Offer"]}</td>
+                        <td style="width:25%"><strong>Simple Description</strong></td>
+                        <td style="width:75%">${item.fields["User Offer"]}</td>
                     </tr>
                     <tr>
-                        <td style={{"width": "25%"}}><strong>Detailed Description</strong></td>
-                        <td style={{"width": "75%"}}>${item.fields["Detailed Description"]}</td>
+                        <td style="width:25%"><strong>Detailed Description</strong></td>
+                        <td style="width:75%">${item.fields["Detailed Description"]}</td>
                     </tr>
                     <tr>
-                        <td style={{"width": "25%"}}><strong>Advertiser Details</strong></td>
-                        <td style={{"width": "75%"}}>${item.fields["About Company"]}</td>
+                        <td style="width:25%"><strong>Advertiser Details</strong></td>
+                        <td style="width:75%">${item.fields["About Company"]}</td>
                     </tr>
                     <tr>
-                        <td style={{"width": "25%"}}><strong>Creatives / Assets</strong></td>
-                        <td style={{"width": "75%"}}>
+                        <td style="width:25%"><strong>Creatives / Assets</strong></td>
+                        <td style="width:75%">
                         <a
                                 href=${item.fields["Creatives Folder"]}
                         target="_blank" rel="noreferrer">Available
                         at this link</a></td>
                     </tr>
                     <tr>
-                        <td style={{"width": "25%"}}><strong>Sample Blog Post</strong></td>
-                        <td style={{"width": "75%"}}>
+                        <td style="width:25%"><strong>Sample Blog Post</strong></td>
+                        <td style="width:75%">
                         <a href=${item.fields["Example Posts"]}
                         target="_blank" rel="noreferrer">
                         Good Driver? Prove It, and This Insurance Company Will Give You a Lower Rate</a></td>
