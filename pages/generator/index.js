@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {getAllData, getOneField} from "@/services/getData";
+import {getAllData} from "@/services/getData";
 import styles from "./Generated.module.css"
 
 export default function Generated() {
@@ -33,7 +33,8 @@ export default function Generated() {
             }
             <ul className={styles.list}>
                 {data?.records.map((item) => {
-                    const html = `<html>
+                    const html = `
+                <html>
                     <head>
                         <style>
                             table, td {
@@ -91,7 +92,7 @@ export default function Generated() {
                     return (
                         <li key={item.id}>
                             <img height="40px" src={item.fields['Image']?.[0].url} alt=""/>
-                            <a href={`/generator/${item.id}`}>{item.fields["Campaign Name"]}</a>
+                            <p>{item.fields["Campaign Name"]}</p>
                             <textarea style={{width: "1px", height: "1px", display: "none"}}>
                           {html}
                         </textarea>
@@ -106,3 +107,6 @@ export default function Generated() {
         </>
     )
 }
+
+
+
