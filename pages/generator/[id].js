@@ -10,7 +10,7 @@ export default function Field({field}) {
     return (
         <>
             <p>{field.id}</p>
-          {/*  <table style={{"width": "100%"}}>
+            <table style={{"width": "100%"}}>
                 <tr>
                     <td style={{"width": "25%"}}><strong><font color="red">Special Note</font></strong></td>
                     <td style={{"width": "75%"}}>{field.fields["User Requirements"]}</td>
@@ -46,12 +46,14 @@ export default function Field({field}) {
                            target="_blank" rel="noreferrer">
                             Good Driver? Prove It, and This Insurance Company Will Give You a Lower Rate</a></td>
                 </tr>
-            </table>*/}
+            </table>
         </>
     )
 }
 
 export async function getStaticProps(context) {
+    const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
+    await delay(3000).then(() => console.log('waited 3 seconds'))
     console.log(context.params.id + '----------------------')
     const field = await getOneField(context.params.id)
     return {
