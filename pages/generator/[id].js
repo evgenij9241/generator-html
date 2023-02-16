@@ -6,7 +6,7 @@ export const config = {
 }
 
 export default function Field({field}) {
-    if(Object.keys(data.fields).length === 0) return <p>no data</p>
+    if(Object.keys(field.fields).length === 0) return <p>no data</p>
     return (
         <>
             <table style={{"width": "100%"}}>
