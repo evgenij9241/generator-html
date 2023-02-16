@@ -9,7 +9,6 @@ export default function Field({field}) {
     if(Object.keys(field.fields).length === 0) return <p>no data</p>
     return (
         <>
-            <p>{field.id}</p>
             <table style={{"width": "100%"}}>
                 <tr>
                     <td style={{"width": "25%"}}><strong><font color="red">Special Note</font></strong></td>
@@ -53,9 +52,7 @@ export default function Field({field}) {
 
 export async function getStaticProps(context) {
     const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
-    await delay(3000).then(() => console.log('waited 3 seconds'))
-
-    console.log(context.params.id + '----------------------')
+    await delay(500).then(() => console.log('----------------------Delay for axios----------------------'))
     const field = await getOneField(context.params.id)
     return {
         props: {
